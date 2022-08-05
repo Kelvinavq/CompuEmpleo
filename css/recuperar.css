@@ -1,0 +1,169 @@
+@import url(colors.css);
+
+body {
+  background: var(--fondo);
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  header h1{
+    color: var(--blanco);
+  }
+
+  main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .foto{
+      overflow: hidden;
+      width: 150px;
+      height: 150px;
+      border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+      animation: morph 3.75s linear infinite;
+      border: 1px solid var(--blanco);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .foto img{
+      width: 100%;
+      height: 100%;
+  }
+
+  @keyframes morph {
+
+    0%, 100%{
+      border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    }
+      
+    33%{
+      border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+    }
+
+    66%{
+      border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+    }
+  }
+
+  .bienvenido{
+      margin-top: 20px;
+      color: var(--blanco);
+  }
+
+  form{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+  }
+
+  .grupo_input{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .grupo_input input{
+      height: 50px;
+      border-radius: 30px;
+      border: 1px solid var(--gris);
+      color: var(--gris);
+      background: transparent;
+      outline: none;
+      padding-left: 15px;
+  }
+
+
+  .grupo_input label{
+      color: var(--gris);
+  }
+  .enlace {
+      width: 80%;
+      margin-top: 5px;
+  }
+
+  .enlace a{
+      color: var(--primario);
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+  .btn{
+    margin-top: 15px;
+    width: 80%;
+  }
+  
+  .btn input{
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: var(--primario);
+    color: var(--blanco);
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+
+
+
+
+  
+  @media (min-width:820px) {
+
+    form{
+      margin-top: 50px;
+    }
+  
+    .grupo_input input{
+      width: 70%;
+    }
+  
+    .grupo_input{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .btn{
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+  
+    .grupo_input input{
+      width: 50%;
+    }
+  
+    .btn{
+      width: 30%;
+    }
+  }

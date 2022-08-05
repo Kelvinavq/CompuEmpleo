@@ -1,0 +1,146 @@
+@import url(colors.css);
+
+body {
+  background: var(--fondo);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.publicar {
+  width: 80%;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primario);
+}
+
+.publicar a {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--gris);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.publicadas {
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.titlee {
+  color: var(--blanco);
+  padding: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contenedor_oferta {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.oferta {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  border-bottom: 1px solid var(--gris);
+  padding: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.oferta:nth-child(odd) {
+  background: rgba(99, 99, 99, 0.144);
+}
+
+.oferta:nth-child(even) {
+  border-bottom: none;
+}
+
+.oferta:hover {
+  transition: all 0.3s ease;
+  background: rgba(99, 99, 99, 0.308);
+}
+
+.title_oferta {
+  color: var(--blanco);
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.enlace{
+  display: flex;
+  gap: 10px;
+}
+
+.enlace form:nth-child(2) input[type="submit"]{
+  color: var(--invalid);
+}
+
+
+.enlace input{
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--blanco);
+  font-weight: bold;
+}
+
+.descripcion {
+  color: var(--gris);
+  padding: 10px 0;
+}
+
+.sueldo {
+  color: var(--blanco);
+  padding-bottom: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.enlace_postulaciones form input{
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--blanco);
+  font-weight: bold;
+}

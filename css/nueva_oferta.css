@@ -1,0 +1,72 @@
+@import url(colors.css);
+
+body {
+  background: var(--fondo);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo_input{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    gap: 10px;
+}
+
+.grupo_input label{
+    text-align: left;
+}
+
+.grupo_input textarea{
+    height: 100px;
+    padding: 10px;
+}
+
+.grupo_input input, textarea, select{
+    height: 50px;
+    width: 100%;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid var(--gris);
+    padding-left: 10px;
+    color: var(--gris);
+    resize: none;
+    outline: none;
+}
+
+.grupo_input label{
+    color: var(--gris);
+}
+
+.grupo_input input[type='submit']{
+    background: var(--primario);
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--blanco);
+}

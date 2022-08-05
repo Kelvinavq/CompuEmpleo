@@ -1,0 +1,157 @@
+@import url(colors.css);
+
+body{
+    background: var(--fondo);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.textos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 15px;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2em;
+    padding-left: 15px;
+}
+
+main{
+    padding: 10px;
+}
+
+
+input, select, textarea{
+    padding-left: 15px;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid var(--gris);
+    color: gray;
+}
+
+label{
+    color: var(--gris);
+    text-align: left;
+}
+
+.grupo_input{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grupo_input input, select, textarea{
+    background: none;
+
+}
+
+
+
+.grupo_input_img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.grupo_input_img .img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo_input_img .img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+textarea{
+    height: 150px;
+    resize: none;
+    padding: 15px;
+}
+
+.triple, .doble{
+    display: flex;
+    gap: 5px;
+}
+
+.doble select{
+    width: 40%;
+}
+
+input[type='file']{ 
+  border: none;
+  outline: none;
+  color: var(--gris);
+  border-radius: 6px;
+}
+
+input[type='submit']{ 
+    border: none;
+    outline: none;
+    background-color: var(--primario);
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0;
+  }
+
+  @media (min-width: 860px) {
+    .grupo_input{
+        width: 100%;
+    }
+
+    .formulario_editar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grupo_input, 
+    .grupo_input_img{
+        width: 80%;
+    }
+
+    .form_editar_info{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .grupo_input, 
+    .grupo_input_img{
+        width: 60%;
+    }
+  }

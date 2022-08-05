@@ -1,0 +1,41 @@
+@import url(colors.css);
+
+body {
+  background: var(--fondo);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formulario__input-error{
+  display: none;
+}
+
+.formulario__grupo-correcto .formulario__input-error{
+  display: none;
+}
+
+
+.formulario__grupo-incorrecto .formulario__input-error{
+  display: block;
+}
+
+.formulario__grupo-correcto input{
+  border: 1px solid var(--valid);
+}
+
+.formulario__grupo-incorrecto input{
+  border: 1px solid var(--invalid);
+}
+
+.mensaje__error{
+  display: none;
+}
+
+.mensaje__error-activo{
+  display: block;
+}
